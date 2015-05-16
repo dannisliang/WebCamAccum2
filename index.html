@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>WebCam Accumulation</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.js"></script> -->
+  <script src="lib/three.min.js"></script>
+  <script src="lib/stats.min.js"></script>
+  <script src="lib/shaders/BlendShader.js"></script>
+  <script src="js/script.js"></script>
+
+  <video id="video" style="display:none"></video>
+  <div id="mixRatio">
+    <p>MIX RATIO</p>
+    <input id="mixRatioInput" type="range" min="0.7" max="0.995" step="0.005" value="0" oninput="changeMixRatio(this);">
+  </div>
+</body>
+</html>
